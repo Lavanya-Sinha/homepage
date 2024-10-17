@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.background{
+    background-image: url("./src/background.avif");
+    background-size: cover;
+}
+.flip-card {
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+}
+
+/* Rotate horizontally (X-axis) when hovering */
+.flip-card:hover {
+    transform: rotateY(180deg);
+}
